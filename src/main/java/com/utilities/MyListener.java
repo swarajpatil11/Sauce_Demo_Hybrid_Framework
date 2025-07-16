@@ -19,7 +19,7 @@ public class MyListener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 
 		logger.info("test exicution started" + result.getName());
-		test = reports.createTest("test case execution" + result.getName());
+                test = reports.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override
