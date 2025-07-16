@@ -10,7 +10,7 @@ public class MyReports {
 
 	public static ExtentReports getInstance() {
 
-		String path = System.getProperty("user.dir") + "/test-output/index.html";
+		String path = System.getProperty("user.dir") + "/test-output/report.html";
 		if (extent == null) {
 			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(path);
 			sparkReporter.config().setTheme(Theme.DARK);
